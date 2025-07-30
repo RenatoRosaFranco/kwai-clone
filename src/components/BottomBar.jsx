@@ -5,6 +5,10 @@ import { RiStore2Line } from "react-icons/ri";
 import { BsCartPlus } from "react-icons/bs";
 
 const BottomBar = () => {
+  const handleClick = (link) => {
+    window.open(link, '_blank');
+  }
+
   return (
     <div className="bottom-bar">
       <div className="bottom-bar-left">
@@ -22,7 +26,9 @@ const BottomBar = () => {
         <div className="bottom-bar-cart">
           <BsCartPlus className="cart-icon" />
         </div>
-        <Button className="bottom-bar-button">
+        <Button className="bottom-bar-button"
+          onClick={() => handleClick('https://www.google.com')}
+        >
           Compre Agora
         </Button>
       </div>
