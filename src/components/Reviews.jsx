@@ -7,18 +7,14 @@ const Reviews = () => {
 
   const reviews = [
     {
+      image: 'avatar.png',
       name: 'A****3',
       label: 'cano curto Sortida, Kit 3 par',
       rating: 5,
       comment: 'Produto de qualidade, entrega rápida e preço justo.',
     },
     {
-      name: 'X****t',
-      label: 'cano curto Sortida, Kit 3 par',
-      rating: 5,
-      comment: 'As meias são boas e confortáveis, mas achei que algumas cores poderiam ser diferentes. No geral, gostei bastante e a entrega foi rápida. Valeu a pena! Vou continuar usando!',
-    },
-      {
+      image: 'avatar.png',
       name: 'X****t',
       label: 'cano curto Sortida, Kit 3 par',
       rating: 5,
@@ -32,7 +28,9 @@ const Reviews = () => {
         <Card.Body>
           <Row className="align-items-start p-0 card-body-row">
             <Col xs="auto">
-              <div className="review-card-avatar"></div>
+              <div className="review-card-avatar">
+                <img src={review.image} alt="avatar" className="img-fluid rounded-circle" />
+              </div>
             </Col>
 
             <Col className="ps-0">

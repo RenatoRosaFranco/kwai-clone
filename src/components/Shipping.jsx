@@ -50,7 +50,6 @@ const ShippingSection = () => {
               <RiShieldCheckFill className="me-2 icon" size={16} />
               <span className='refund-text'>Reembolso para quaisquer problemas de logística</span>
               <FaCaretRight className="ms-2 icon" size={14} />
-
             </Col>
           </Row>
         </Container>
