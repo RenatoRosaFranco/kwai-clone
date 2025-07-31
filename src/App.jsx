@@ -11,11 +11,13 @@ import Store from './components/Store';
 import StoreOptions from './components/StoreOptions';
 import ProductDetails from './components/ProductDetails';
 import BottomBar from './components/BottomBar';
+import Badgets from './components/Badgets';
 
 function App() {
   return (
     <div className="kwai-shop-page">
       <ProductHero />
+      <Badgets /> 
       <ProductHeader />
       <Shipping />
       <Reviews />

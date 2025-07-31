@@ -5,13 +5,13 @@ import { PiArrowFatDownFill } from "react-icons/pi";
 
 const ProductHeader = () => {
   return (
-    <div class='product-header'>
+    <div class='product-header mt-0'>
       <div className="d-flex align-items-center mb-2">
         <Badge className="me-2 product-badge">
           <PiArrowFatDownFill /> O Mais Barato
         </Badge>
         <span className='product-price'>
-          A partir de <span className='product-price-value'>R$8,99</span>
+          <span className='product-price-value'>R$8,99</span>
         </span>
       </div>
 

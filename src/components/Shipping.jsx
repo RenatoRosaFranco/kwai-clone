@@ -24,19 +24,12 @@ const ShippingSection = () => {
 
         <Row className="mb-2">
           <Col xs={12} className="d-flex align-items-center">
-            <strong style={{ fontSize: '0.92rem', marginRight: 4 }}>Custo:</strong>
-            <span className="bluesky" style={{ fontWeight: 600 }}>Free</span>
-            <span style={{ textDecoration: 'line-through', color: '#bbb', marginLeft: 4, fontSize: '0.88rem' }}>
+            <strong className="shipping-cost">Custo:</strong>
+            <span className="bluesky ms-1 me-1" style={{ fontWeight: 600 }}>Free</span>
+            <span className="shipping-price">
               R$7,06
             </span>
-            <span style={{
-              color: '#159f95',
-              fontSize: '0.86rem',
-              marginLeft: 6,
-              backgroundColor: '#e9f8f7',
-              padding: '1px 5px',
-              borderRadius: '4px'
-            }}>
+            <span class='shipping-price-badge'>
               -R$7,06
             </span>
           </Col>
@@ -49,10 +42,10 @@ const ShippingSection = () => {
             <Col className="d-flex align-items-center refund-section">
               <RiShieldCheckFill className="me-2 icon" size={16} />
               <span className='refund-text'>Reembolso para quaisquer problemas de logística</span>
-              <FaCaretRight className="ms-2 icon" size={14} />
             </Col>
           </Row>
         </Container>
+        <FaCaretRight className="ms-2 icon" size={14} />
       </section>
     </>
   );

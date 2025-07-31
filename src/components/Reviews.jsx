@@ -64,7 +64,7 @@ const Reviews = () => {
     <Container className='reviews-container'>
       <Row>
         <Col md={12} sm={12} xs={12}>
-          <h5 className="fw-bold mb-2 d-flex justify-content-between align-items-center">
+          <h5 className="fw-bold mb-1 d-flex justify-content-between align-items-center">
             <span>Avaliação do produto (1.220)</span>
             <FaAngleRight className="icon" size={16} />
           </h5>
