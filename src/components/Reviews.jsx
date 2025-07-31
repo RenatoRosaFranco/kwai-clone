@@ -18,6 +18,12 @@ const Reviews = () => {
       rating: 5,
       comment: 'As meias são boas e confortáveis, mas achei que algumas cores poderiam ser diferentes. No geral, gostei bastante e a entrega foi rápida. Valeu a pena! Vou continuar usando!',
     },
+      {
+      name: 'X****t',
+      label: 'cano curto Sortida, Kit 3 par',
+      rating: 5,
+      comment: 'As meias são boas e confortáveis, mas achei que algumas cores poderiam ser diferentes. No geral, gostei bastante e a entrega foi rápida. Valeu a pena! Vou continuar usando!',
+    },
   ]
 
   const Review = ({ review }) => {

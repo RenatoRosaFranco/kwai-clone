@@ -294,9 +294,9 @@
   .product-details-container {
     position: relative;
     padding: 16px;
-    margin-top: -30px;
+    margin-top: -40px;
     background-color: #fff;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
   
     h5 {
       position: relative;
@@ -309,6 +309,40 @@
       color: #999;
     }
   }
+
+
+  // CTA
+  .cta-text-slide {
+    animation: slideUp 0.5s ease;
+    transition: all 0.3s ease;
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+  .bottom-bar-cta {
+    position: fixed;
+    width: 100%;
+    margin-bottom: 0px !important;
+    border-bottom: 1px solid #eee;
+    background-color: #fff !important;
+    bottom: 45px;
+
+    p {
+      position: relative;
+      font-size: 12px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  }
   
   .bottom-bar {
     position: fixed;
@@ -317,7 +351,7 @@
     width: 100%;
     background: #fff;
     border-top: 1px solid #eee;
-    padding: 8px 16px;
+    padding: 10px 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -337,7 +371,7 @@
   
     .bottom-bar-cart {
       background-color: #fae9e1;
-      padding: 10px 12px;
+      padding: 7px 12px;
   
       .cart-icon {
         font-size: 20px;
@@ -345,13 +379,32 @@
         font-weight: bold;
       }
     }
-  
+    
+    .bottom-bar-store {
+      position: relative;
+      background-color: transparent;
+      border: 0px none;
+      width: 50px;
+    }
+
+    .bottom-bar-contact {
+      position: relative;
+      margin-left: -28px;
+      background-color: transparent;
+      border: 0px none;
+      width: 50px;
+    }
+
     .bottom-bar-button {
       background-color: #ff4a07;
       border-color: #ff4a07;
       border-radius: 0;
+      width: 215px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
       padding: 10px 20px;
       font-weight: bold;
+      font-size: 14px;
     }
   }
   
