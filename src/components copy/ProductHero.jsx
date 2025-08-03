@@ -1,12 +1,10 @@
-import { useState } from 'react';
-import { FreeMode, Thumbs } from 'swiper/modules';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-import '../styles/ProductHero.scss';
+import { Thumbs, FreeMode } from 'swiper/modules';
 
 import 'swiper/css';
-import 'swiper/css/free-mode';
 import 'swiper/css/thumbs';
+import 'swiper/css/free-mode';
 
 const media = [
   { type: 'video', src: 'https://www.w3schools.com/html/mov_bbb.mp4' },

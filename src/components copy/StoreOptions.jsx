@@ -1,7 +1,6 @@
+import React from 'react';
 import { Container } from 'react-bootstrap';
 import { FaAngleRight } from "react-icons/fa";
-
-import '../styles/StoreOptions.scss';
 
 const StoreOptions = () => {
   const options = [

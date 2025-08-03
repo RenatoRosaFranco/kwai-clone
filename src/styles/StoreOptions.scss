@@ -1,0 +1,54 @@
+.store-options-container {
+  position: relative;
+  padding: 16px;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+
+  h5 {
+    position: relative;
+    font-size: 15px;
+  }
+
+  .store-options-list {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .store-options-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .store-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .store-card-img {
+    width: 110px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+
+  .store-card-name {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 4px;
+    width: 100%;
+  }
+
+  .store-card-price {
+    font-size: 14px;
+    color: #111;
+  }
+}

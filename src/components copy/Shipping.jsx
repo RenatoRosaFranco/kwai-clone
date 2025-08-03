@@ -1,9 +1,9 @@
-import { Col, Container, Row } from 'react-bootstrap';
-import { FaAngleRight, FaCaretRight } from "react-icons/fa";
-import { FiMapPin } from "react-icons/fi";
-import { HiShieldCheck } from "react-icons/hi";
-
-import '../styles/Shipping.scss';
+import React from 'react';
+import { Row, Col, Container } from 'react-bootstrap';
+import { FiMapPin } from "react-icons/fi";  
+import { RiShieldCheckFill } from 'react-icons/ri';
+import { FaCaretRight } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
 
 const ShippingSection = () => {
   return (
@@ -40,7 +40,7 @@ const ShippingSection = () => {
         <Container>
           <Row className="d-flex align-items-center ">
             <Col className="d-flex align-items-center refund-section">
-              <HiShieldCheck className="me-2 icon" size={16} />
+              <RiShieldCheckFill className="me-2 icon" size={16} />
               <span className='refund-text'>Reembolso para quaisquer problemas de logística</span>
             </Col>
           </Row>

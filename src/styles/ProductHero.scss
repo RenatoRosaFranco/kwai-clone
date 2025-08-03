@@ -1,0 +1,38 @@
+.product-hero {
+  position: relative;
+
+  .carrousel {
+    width: 100%;
+
+    .swiper-wrapper {
+      height: auto !important;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+    }
+  }
+
+  .product-hero-thumbnails {
+    margin-top: 10px;
+
+    .swiper-slide {
+      width: 44px !important; // thumbnail + margem
+      height: 44px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .product-hero-thumbnail {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}

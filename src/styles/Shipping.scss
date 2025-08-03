@@ -1,0 +1,82 @@
+.shipping-container {
+  position: relative;
+  padding: 16px;
+  background-color: #fff;
+  border-top: 6px solid #eee;
+  padding-bottom: 4px;
+  font-size: 12px;
+  color: #333;
+
+  .shipping-title {
+    font-size: 14px;
+  }
+
+  .shipping-address-container {
+    color: #444;
+    padding-right: 11px !important;
+  }
+
+  .shipping-address {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .shipping-price-badge {
+    color: #159f95;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 6px;
+    background-color: transparent;
+    margin-left: 3px;
+    border: 1px solid #f2f6f5;
+    padding: 1px 5px;
+  }
+
+  .bluesky {
+    color: #40a49a;
+  }
+
+  .shipping-cost {
+    position: relative;
+    font-size: 14px;
+    margin-right: 4px;
+  }
+
+  .shipping-price {
+    position: relative;
+    text-decoration: line-through;
+    color: #bbb;
+    font-size: 12px;
+    margin-right: 4px;
+  }
+}
+
+
+.refund-container {
+  position: relative;
+  background-color: #ddfddc;
+  padding: 5px 0px;
+  font-size: 10px;
+
+  .refund-section {
+    margin-left: 0px;
+    font-size: 11px;
+    color: #01a622;
+
+    .icon {
+      position: relative;
+      margin-top: 0px;
+    }
+  }
+
+  .icon {
+    position: relative;
+    color: #01a622;
+    font-size: 16px;
+    margin-top: -15px;
+    margin-right: 13px;
+    float: right;
+  }
+}

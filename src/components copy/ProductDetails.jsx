@@ -1,6 +1,5 @@
-import { Col, Container, Row } from 'react-bootstrap';
-
-import '../styles/ProductDetails.scss';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const ProductDetails = () => {
   return (

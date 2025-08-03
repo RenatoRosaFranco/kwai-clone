@@ -1,10 +1,8 @@
-import { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import { AiOutlineMessage } from "react-icons/ai";
-import { BsCartPlus } from "react-icons/bs";
 import { RiStore2Line } from "react-icons/ri";
-
-import '../styles/BottomBar.scss';
+import { BsCartPlus } from "react-icons/bs";
 
 const BottomBar = () => {
   // Link (Comprar)
@@ -29,7 +27,7 @@ const BottomBar = () => {
     { gradientColor: "linear-gradient(to bottom, #fef3ed, white)", textColor: '#4e4a47', text: 'O Mais Barato' },
     { gradientColor: "linear-gradient(to bottom, #fef3ed, white)", textColor: '#4e4a47', text: 'O Mais Barato' },
   ]
-
+  
   const CtaSection = ({ cta }) => {
     const [index, setIndex] = useState(0);
 

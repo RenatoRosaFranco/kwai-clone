@@ -1,10 +1,9 @@
-import { Button, Image } from 'react-bootstrap';
-
-import '../styles/Store.scss';
+import React from 'react';
+import { Button, Row, Col, Image } from 'react-bootstrap';
 
 const Store = () => {
   const storeData = {
-    name: 'Max Mo',
+    name: 'jz moda shop',
     recurringClients: '18.051',
     productCount: 439,
     avatar: 'https://picsum.photos/seed/logo/60/60',
@@ -22,10 +21,7 @@ const Store = () => {
           className="me-2"
         />
         <div>
-          <h6 className="mb-0 text-capitalize store-name mb-1">
-            <span className="store-badge">Loja indicada</span>
-            {storeData.name}
-          </h6>
+          <h6 className="mb-0 text-capitalize fw-semibold store-name mb-1">{storeData.name}</h6>
           <div className="store-recurring-clients mb-1">
             {storeData.recurringClients} clientes recorrentes
           </div>

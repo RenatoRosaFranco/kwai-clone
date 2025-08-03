@@ -1,7 +1,7 @@
-import { Card, Col, Container, Row } from 'react-bootstrap';
-import { FaAngleRight, FaStar } from 'react-icons/fa';
-
-import '../styles/Reviews.scss';
+import React from 'react';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import { FaStar } from 'react-icons/fa';
+import { FaAngleRight } from "react-icons/fa";
 
 const Reviews = () => {
 
@@ -68,7 +68,7 @@ const Reviews = () => {
             <span>Avaliação do produto (1.220)</span>
             <FaAngleRight className="icon" size={16} />
           </h5>
-
+                  
           {reviews.map((review, index) => (
             <Review key={index} review={review} />
           ))}

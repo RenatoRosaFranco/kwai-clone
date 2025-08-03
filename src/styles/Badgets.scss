@@ -1,0 +1,76 @@
+.badgets-wrap {
+  position: relative;
+}
+
+.badgets-container {
+  display: flex;
+  gap: 8px;
+  padding: 9px;
+  margin-left: 0;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .badget {
+    background-color: #e4f6f0;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    flex: 0 0 calc((100% - 8px) / 2);
+    /* 2 por view, considerando o gap */
+    scroll-snap-align: start;
+  }
+
+  .discount-badget {
+    background-color: #fff0eb;
+    color: #e55a30;
+  }
+
+  .free-shipping-badget {
+    background-color: #f0f6f6;
+    color: #55aba7;
+  }
+}
+
+.badgets-arrow {
+  position: absolute;
+  right: 2px;
+  top: -5px;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  line-height: 1;
+  font-size: 20px;
+  opacity: .9;
+  rotate: 180deg;
+}
+
+.badgets-wrap::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 36px;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 60%);
+}

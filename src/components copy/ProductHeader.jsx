@@ -1,14 +1,12 @@
+import React from 'react';
 import { Badge } from 'react-bootstrap';
 import { MdHelpOutline } from "react-icons/md";
 import { PiArrowFatDownFill } from "react-icons/pi";
 
-import '../styles/ProductHeader.scss';
-import Badgets from './Badgets';
-
 const ProductHeader = () => {
   return (
     <div class='product-header mt-0'>
-      <div className="d-flex align-items-center mb-0">
+      <div className="d-flex align-items-center mb-2">
         <Badge className="me-2 product-badge">
           <PiArrowFatDownFill /> O Mais Barato
         </Badge>
@@ -17,11 +15,8 @@ const ProductHeader = () => {
         </span>
       </div>
 
-      <Badgets />
-
       <div className='product-name mb-2'>
-        <span className="product-badge">Indicado</span>
-        Kit 3 par, 12 par, 24 par variação de<br/> Meias Femininas confortável
+        Kit 3 par, 12 par, 24 par variação de Meias Femininas confortável
       </div>
 
       <div className='product-sale-count'>
