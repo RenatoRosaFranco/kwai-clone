@@ -70,7 +70,7 @@ const ProductHero = () => {
         modules={[FreeMode, Thumbs]}
         onSwiper={setThumbsSwiper}
         slidesPerView="auto"
-        spaceBetween={4}
+        spaceBetween={0}
         freeMode
       >
         {media.map((item, index) => (
