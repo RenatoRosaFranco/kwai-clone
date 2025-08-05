@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
-import { AiOutlineMessage } from "react-icons/ai";
-import { BsCartPlus } from "react-icons/bs";
-import { RiStore2Line } from "react-icons/ri";
 
 import '../styles/BottomBar.scss';
 
@@ -97,8 +94,8 @@ const BottomBar = () => {
             <img
               src="/icons/cart.png"
               alt="Store icon"
-              width={25}
-              height={25}
+              width={28}
+              height={28}
               className="store-icon"
             />
           </div>

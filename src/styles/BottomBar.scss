@@ -60,7 +60,7 @@
 
     .contact-icon {
       position: relative;
-      margin-left: 3px;
+      margin-left: 5px;
     }
 
     .button-label {
@@ -72,7 +72,7 @@
   .bottom-bar-right {
     display: flex;
     align-items: center;
-    padding-right: 20px;
+    padding-left: 10px;
   }
 
   .bottom-bar-cart {
@@ -110,12 +110,11 @@
     background-color: #ff4906;
     border-color: #ff4906;
     border-radius: 0;
-    width: 200px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    width: 191px;
+    border-radius: 5px;
     padding: 10px 20px;
     margin-right: 5px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
