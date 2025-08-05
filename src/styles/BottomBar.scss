@@ -49,17 +49,38 @@
     display: flex;
     gap: 25px;
     align-items: center;
+    padding-right: 10px;
+    margin-left: -12px;
     font-size: 12px;
+  
+    .store-icon {
+      position: relative;
+      margin-left: 1px;
+    }
+
+    .contact-icon {
+      position: relative;
+      margin-left: 3px;
+    }
+
+    .button-label {
+      position: relative;
+      margin-top: -6px;
+    }
   }
 
   .bottom-bar-right {
     display: flex;
     align-items: center;
+    padding-right: 20px;
   }
 
   .bottom-bar-cart {
     background-color: #fae9e1;
-    padding: 5px 12px !important;
+    padding: 8px 12px !important;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 1px solid #fae9e1;
 
     .cart-icon {
       font-size: 20px;
@@ -70,6 +91,7 @@
 
   .bottom-bar-store {
     position: relative;
+    color: #000 !important;
     background-color: transparent;
     border: 0px none;
     width: 50px;
@@ -77,6 +99,7 @@
 
   .bottom-bar-contact {
     position: relative;
+    color: #000 !important;
     margin-left: -28px;
     background-color: transparent;
     border: 0px none;
@@ -84,13 +107,14 @@
   }
 
   .bottom-bar-button {
-    background-color: #ff4a07;
-    border-color: #ff4a07;
+    background-color: #ff4906;
+    border-color: #ff4906;
     border-radius: 0;
     width: 200px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 10px 20px;
+    margin-right: 5px;
     font-weight: bold;
     font-size: 14px;
   }

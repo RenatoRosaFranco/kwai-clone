@@ -67,26 +67,44 @@ const BottomBar = () => {
           <div className="text-center">
             <button onClick={() => handleStore('https://www.google.com')}
               className="bottom-bar-store">
-              <RiStore2Line size={20} />
-              <div>Loja</div>
+              <img
+                  src="/icons/store.png"
+                  alt="Store icon"
+                  width={30}
+                  height={30}
+                  className="store-icon"
+                />
+              <div className='button-label'>Loja</div>
             </button>
           </div>
           <div className="text-center">
             <button onClick={() => handleContact('https://wa.me/5511999999999')}
               className="bottom-bar-contact text-center">
-              <AiOutlineMessage size={20} />
-              <div>Contatar</div>
+              <img
+                  src="/icons/chat.png"
+                  alt="Store icon"
+                  width={30}
+                  height={30}
+                  className="store-icon"
+                />
+              <div className='button-label'>Contatar</div>
             </button>
           </div>
         </div>
 
         <div className="bottom-bar-right">
           <div className="bottom-bar-cart">
-            <BsCartPlus className="cart-icon" />
+            <img
+              src="/icons/cart.png"
+              alt="Store icon"
+              width={25}
+              height={25}
+              className="store-icon"
+            />
           </div>
           <Button className="bottom-bar-button"
             onClick={() => handleBuy('https://www.google.com')}
-          > Compre Agora
+          > Compre com cupons
           </Button>
         </div>
       </div>
